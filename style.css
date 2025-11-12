@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* Tamaño uniforme para los iframes */
+.map iframe {
+  width: 400px;
+  height: 400px;
+  border: none;
+    /* border-radius: 50%;  */
+  /* Opcional: circular para todos */
+}
+
+/* #hydra-iframe1 iframe{
+   border-radius: 50%; 
+} */
+/* opción para un solo iframe que queramos circular */
+
+
+/* #hydra-iframe2 iframe {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+} */
+/* para "recortar" visualmente usando una máscara de recorte con una forma geométrica (aquí ejemplo de triángulo)*/
+/* 50% 0% → vértice superior (centro arriba)
+0% 100% → esquina inferior izquierda
+100% 100% → esquina inferior derecha */
+
+/* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+/* Ejemplo para hexágono */
+
+/* 
+clip-path: polygon(
+  30% 0%, 70% 0%, 
+  100% 30%, 100% 70%, 
+  70% 100%, 30% 100%, 
+  0% 70%, 0% 30%
+); */
+/* Ejemplo para octágono */
+
+/* Distribución básica opcional */
+
+
+
+.map {
+  display: inline-block;
+  margin: 1rem;
+}
